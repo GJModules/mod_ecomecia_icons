@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8" client="site" method="upgrade">
+	<name>MOD_ECOMMERCE_ICONS</name>
+	<creationDate>18.04.2021</creationDate>
+	<author>Gartes</author>
+	<authorEmail>sad.net79@gmail.com</authorEmail>
+	<authorUrl>https://nobd.ga</authorUrl>
+	<copyright>A copyright</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>MOD_ECOMMERCE_ICONS_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_ecommerce_icons">mod_ecommerce_icons.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>mod_ecommerce_icons.xml</filename>
+		<filename>update.xml</filename>
+	</files>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="ecomecia_icons"></server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<fieldset addfieldpath="/libraries/GNZ11/Extensions/Fields" />
+				<fieldset addfieldpath="/libraries/GNZ11/Extensions/Fields" />
+				<field name="__v"
+					type="version"
+					path_xml="/modules/mod_ecommerce_icons.xml"
+					class="__v"
+					filter="raw" />
+
+				<field name="__v"
+					type="version"
+					path_xml="/modules/mod_ecommerce_icons.xml"
+					class="__v"
+					filter="raw" />
+				<field name="domain"
+					type="url"
+					label="MOD_ECOMMERCE_ICONS_URL_LABEL"
+					description="MOD_ECOMMERCE_ICONS_URL_DESCRIPTION"
+					hint="https://www.example.com"
+					filter="url"
+					validate="url"
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

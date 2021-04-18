@@ -1,2 +1,2 @@
-# mod_ecomecia_icons
+# mod_ecommerce_icons
 Модуль иконок магазина (корзина, сравнение, список желаний)
